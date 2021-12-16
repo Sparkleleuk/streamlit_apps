@@ -1,4 +1,3 @@
-
 from matplotlib import interactive
 import streamlit as st
 # To make things easier later, we're also importing numpy and pandas for
@@ -47,9 +46,9 @@ st.subheader("ACS: 0.508/1")
 st.write("Brief explanation of Boston's overall ACS.")
 
 map_data = pd.DataFrame({
-    'US cities' : ['Boston', 'Kansas City', 'St. Louis'],
-    'lat' : [42.3601, 39.0997, 38.6270],
-    'lon' : [-71.0589, -94.5786, -90.1994]
+    'US cities' : ['Boston', 'Kansas City', 'St. Louis', 'Denver'],
+    'lat' : [42.3601, 39.0997, 38.6270, 39.7392],
+    'lon' : [-71.0589, -94.5786, -90.1994, -104.9903]
 })
 
 st.map(map_data)
